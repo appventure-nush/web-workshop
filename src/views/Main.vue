@@ -36,8 +36,8 @@ export default Vue.extend({
       mainOut: ""
     };
   },
-  mounted() {
-    this.mainOut = api.main();
+  async mounted() {
+    this.mainOut = await api.main();
   },
 });
 </script>
